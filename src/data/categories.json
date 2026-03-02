@@ -1,0 +1,8 @@
+[
+  { "id": "den-led", "name": "Đèn LED", "slug": "den-led", "icon": "💡" },
+  { "id": "den-laser", "name": "Đèn Laser", "slug": "den-laser", "icon": "🔦" },
+  { "id": "den-pha", "name": "Đèn Pha Bi", "slug": "den-pha", "icon": "🚗" },
+  { "id": "den-gam", "name": "Đèn Gầm", "slug": "den-gam", "icon": "🌟" },
+  { "id": "den-hau", "name": "Đèn Hậu LED", "slug": "den-hau", "icon": "🔴" },
+  { "id": "den-noi-that", "name": "Đèn Nội Thất", "slug": "den-noi-that", "icon": "✨" }
+]

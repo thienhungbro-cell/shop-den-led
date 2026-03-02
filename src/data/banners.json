@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "https://placehold.co/1200x400/dc2626/ffffff?text=Den+LED+Cao+Cap+%E2%80%94+Giam+20%25",
+    "alt": " XUÂN LỢI STORE — Đèn LED Cao Cấp — Giảm 20%",
+    "link": "/san-pham"
+  },
+  {
+    "id": 2,
+    "image": "https://placehold.co/1200x400/1d4ed8/ffffff?text=Den+Laser+BMW+%E2%80%94+Moi+Ve",
+    "alt": " XUÂN LỢI STORE — Đèn Laser BMW — Mới Về",
+    "link": "/danh-muc/den-laser"
+  },
+  {
+    "id": 3,
+    "image": "https://placehold.co/1200x400/15803d/ffffff?text=Flash+Sale+Cuoi+Tuan+%E2%80%94+Den+Noi+That",
+    "alt": " XUÂN LỢI STORE — Flash Sale Cuối Tuần — Đèn Nội Thất",
+    "link": "/san-pham"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:auto365.vn)",
+      "Bash(bunx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(curl -fsSL https://bun.sh/install)",
+      "Bash(bash)",
+      "Bash(export PATH=\"$HOME/.bun/bin:$PATH\")",
+      "Bash(bun --version)",
+      "Bash(bun x create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(bun x create-next-app@latest lamp-website --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(~/.bun/bin/bun --version)",
+      "Bash(printf '\\\\n')",
+      "Bash(~/.bun/bin/bun x create-next-app@latest lamp-website --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(~/.bun/bin/bun install)",
+      "Bash(~/.bun/bin/bun add zustand clsx tailwind-merge lucide-react)",
+      "Bash(~/.bun/bin/bun run build)"
+    ]
+  }
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "osram-h7-nightbreaker",
+    "slug": "den-led-h7-osram-nightbreaker",
+    "name": "Đèn LED H7 Osram Nightbreaker",
+    "categoryId": "den-led",
+    "brand": "Osram",
+    "price": 1200000,
+    "salePrice": 950000,
+    "images": [
+      "https://placehold.co/500x500/1a1a2e/ffffff?text=Osram+H7"
+    ],
+    "badge": "Bán chạy",
+    "description": "Đèn LED H7 Osram Nightbreaker cho ánh sáng trắng 6000K sáng hơn đèn halogen 220%. Thiết kế plug & play, lắp đặt dễ dàng. Tuổi thọ cao, chịu nhiệt tốt.",
+    "specs": {
+      "Loại chân": "H7",
+      "Công suất": "25W x2",
+      "Màu sắc": "6000K Trắng",
+      "Độ sáng": "3200lm",
+      "Tuổi thọ": "30.000 giờ"
+    },
+    "inStock": true,
+    "featured": true,
+    "isFlashSale": false
+  },
+  {
+    "id": "philips-h4-ultinon",
+    "slug": "den-led-h4-philips-ultinon",
+    "name": "Đèn LED H4 Philips Ultinon Pro9000",
+    "categoryId": "den-led",
+    "brand": "Philips",
+    "price": 1800000,
+    "salePrice": 1450000,
+    "images": [
+      "https://placehold.co/500x500/16213e/ffffff?text=Philips+H4"
+    ],
+    "badge": "Hot",
+    "description": "Philips Ultinon Pro9000 LED H4 với công nghệ thế hệ mới, tăng độ sáng 250% so với đèn halogen. Chứng nhận EMC, an toàn điện từ.",
+    "specs": {
+      "Loại chân": "H4",
+      "Công suất": "27W x2",
+      "Màu sắc": "5800K Trắng",
+      "Độ sáng": "5000lm",
+      "Tuổi thọ": "50.000 giờ"
+    },
+    "inStock": true,
+    "featured": true,
+    "isFlashSale": true
+  },
+  {
+    "id": "laser-bi-gtr",
+    "slug": "den-laser-bi-gtr-ultra",
+    "name": "Đèn Bi Laser GTR Ultra 3.0",
+    "categoryId": "den-laser",
+    "brand": "GTR",
+    "price": 4500000,
+    "salePrice": 3800000,
+    "images": [
+      "https://placehold.co/500x500/0f3460/ffffff?text=Bi+Laser+GTR"
+    ],
+    "badge": "Cao cấp",
+    "description": "Bi Laser GTR Ultra 3.0 cho ánh sáng siêu trắng, xa và rộng. Tích hợp motor servo điều chỉnh góc chiếu, phù hợp mọi loại xe.",
+    "specs": {
+      "Loại": "Bi Laser",
+      "Công suất": "55W",
+      "Màu sắc": "5500K",
+      "Đường kính": "3 inch",
+      "Tầm chiếu": "200m"
+    },
+    "inStock": true,
+    "featured": true,
+    "isFlashSale": false
+  },
+  {
+    "id": "laser-bi-aozoom",
+    "slug": "den-bi-laser-aozoom-a4",
+    "name": "Đèn Bi Laser Aozoom A4 3 inch",
+    "categoryId": "den-laser",
+    "brand": "Aozoom",
+    "price": 5200000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/533483/ffffff?text=Aozoom+A4"
+    ],
+    "badge": null,
+    "description": "Aozoom A4 dòng đèn bi laser cao cấp với nguồn laser nhập khẩu, độ bền vượt trội. Thích hợp nâng cấp cho các dòng xe sang.",
+    "specs": {
+      "Loại": "Bi Laser",
+      "Công suất": "60W",
+      "Màu sắc": "5000K",
+      "Đường kính": "3 inch",
+      "Tuổi thọ": "60.000 giờ"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "den-gam-h11-osram",
+    "slug": "den-gam-h11-osram-ledriving",
+    "name": "Đèn Gầm H11 Osram LEDriving",
+    "categoryId": "den-gam",
+    "brand": "Osram",
+    "price": 850000,
+    "salePrice": 680000,
+    "images": [
+      "https://placehold.co/500x500/2d4a22/ffffff?text=Osram+H11"
+    ],
+    "badge": "Sale",
+    "description": "Đèn gầm LED H11 Osram LEDriving, ánh sáng trắng xanh 6000K tăng tầm nhìn ban đêm. Thiết kế chống nước IP67.",
+    "specs": {
+      "Loại chân": "H11",
+      "Công suất": "12W x2",
+      "Màu sắc": "6000K",
+      "Chống nước": "IP67"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": true
+  },
+  {
+    "id": "den-gam-h11-philips",
+    "slug": "den-gam-h11-philips-racing",
+    "name": "Đèn Gầm H11 Philips Racing Vision",
+    "categoryId": "den-gam",
+    "brand": "Philips",
+    "price": 750000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/1a472a/ffffff?text=Philips+H11"
+    ],
+    "badge": null,
+    "description": "Philips Racing Vision H11 cải thiện tầm nhìn 150% so với đèn tiêu chuẩn. Chịu được rung động và nhiệt độ cao.",
+    "specs": {
+      "Loại chân": "H11",
+      "Công suất": "55W",
+      "Màu sắc": "3400K",
+      "Tuổi thọ": "15.000 giờ"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "den-hau-dải-led",
+    "slug": "dai-led-den-hau-universal",
+    "name": "Dải LED Đèn Hậu Universal 60cm",
+    "categoryId": "den-hau",
+    "brand": "NoName",
+    "price": 350000,
+    "salePrice": 280000,
+    "images": [
+      "https://placehold.co/500x500/7b0000/ffffff?text=LED+Hau+60cm"
+    ],
+    "badge": "Phổ biến",
+    "description": "Dải LED đèn hậu universal 60cm màu đỏ, dễ lắp đặt, chống nước. Phù hợp hầu hết các dòng xe.",
+    "specs": {
+      "Chiều dài": "60cm",
+      "Màu sắc": "Đỏ",
+      "Điện áp": "12V",
+      "Chống nước": "IP65"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": true
+  },
+  {
+    "id": "den-noi-that-ambient",
+    "slug": "den-noi-that-ambient-rgb-64-mau",
+    "name": "Đèn Nội Thất Ambient RGB 64 Màu",
+    "categoryId": "den-noi-that",
+    "brand": "Ambient",
+    "price": 2200000,
+    "salePrice": 1750000,
+    "images": [
+      "https://placehold.co/500x500/2c003e/ffffff?text=Ambient+RGB"
+    ],
+    "badge": "Mới",
+    "description": "Hệ thống đèn ambient RGB 64 màu điều chỉnh qua app điện thoại. Gồm 18 dải LED bao phủ toàn bộ nội thất xe.",
+    "specs": {
+      "Số màu": "64 màu",
+      "Điều khiển": "App Bluetooth",
+      "Số dải": "18 dải",
+      "Điện áp": "12V"
+    },
+    "inStock": true,
+    "featured": true,
+    "isFlashSale": false
+  },
+  {
+    "id": "den-pha-bi-h4",
+    "slug": "cum-den-pha-bi-h4-projector",
+    "name": "Cụm Đèn Pha Bi H4 Projector",
+    "categoryId": "den-pha",
+    "brand": "Morimoto",
+    "price": 3200000,
+    "salePrice": 2700000,
+    "images": [
+      "https://placehold.co/500x500/1a1a1a/ffffff?text=Bi+H4+Projector"
+    ],
+    "badge": "Cao cấp",
+    "description": "Cụm đèn pha bi projector H4 Morimoto, tích hợp sẵn đèn bi và đèn xi-nhan LED. Cho vùng sáng gọn, sắc nét, không chói ngược.",
+    "specs": {
+      "Loại chân": "H4",
+      "Đường kính": "3 inch",
+      "Xi-nhan": "LED",
+      "Màu sắc": "5500K"
+    },
+    "inStock": true,
+    "featured": true,
+    "isFlashSale": false
+  },
+  {
+    "id": "osram-h1-cool-blue",
+    "slug": "den-halogen-h1-osram-cool-blue",
+    "name": "Đèn Halogen H1 Osram Cool Blue Intense",
+    "categoryId": "den-led",
+    "brand": "Osram",
+    "price": 320000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/003366/ffffff?text=Osram+H1"
+    ],
+    "badge": null,
+    "description": "Đèn halogen H1 Osram Cool Blue Intense cho màu sắc ánh sáng xanh trắng 4200K sang trọng. Tăng sáng 20% so với đèn tiêu chuẩn.",
+    "specs": {
+      "Loại chân": "H1",
+      "Công suất": "55W",
+      "Màu sắc": "4200K",
+      "Tuổi thọ": "12.000 giờ"
+    },
+    "inStock": false,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "den-xi-nhan-led-vang",
+    "slug": "den-xi-nhan-led-vang-canbus",
+    "name": "Đèn Xi Nhan LED Vàng Canbus T20",
+    "categoryId": "den-hau",
+    "brand": "Noname",
+    "price": 180000,
+    "salePrice": 130000,
+    "images": [
+      "https://placehold.co/500x500/805000/ffffff?text=Xi+Nhan+LED"
+    ],
+    "badge": "Giá tốt",
+    "description": "Đèn xi nhan LED vàng Canbus T20, không báo lỗi OBD. Lắp thẳng vào chân đèn gốc, không cần relay.",
+    "specs": {
+      "Loại chân": "T20 (7440)",
+      "Màu sắc": "Vàng 3000K",
+      "Canbus": "Có",
+      "Điện áp": "12V"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": true
+  },
+  {
+    "id": "den-noi-that-cua-xe",
+    "slug": "den-noi-that-chieu-cua-xe-logo",
+    "name": "Đèn Logo Chiếu Cửa Xe 2 Cái",
+    "categoryId": "den-noi-that",
+    "brand": "Generic",
+    "price": 250000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/4a0080/ffffff?text=Den+Logo+Cua"
+    ],
+    "badge": null,
+    "description": "Đèn logo chiếu xuống sàn khi mở cửa xe. Hình ảnh sắc nét, tùy chỉnh logo theo yêu cầu. Dễ lắp, không cần đấu dây phức tạp.",
+    "specs": {
+      "Số lượng": "2 cái",
+      "Màu sắc": "Trắng",
+      "Kết nối": "Chân cửa xe",
+      "Chống nước": "IP44"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  }
+]
