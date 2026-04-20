@@ -2,7 +2,9 @@ export interface Product {
   id: string;
   slug: string;
   name: string;
-  categoryId: string;
+  categorySlug: string;
+  brandSlug: string;
+  vehicleSlug?: string;
   brand: string;
   price: number;
   salePrice?: number | null;
@@ -15,11 +17,24 @@ export interface Product {
   isFlashSale: boolean;
 }
 
+export interface VehicleModel {
+  slug: string;
+  name: string;
+}
+
+export interface Brand {
+  slug: string;
+  name: string;
+  vehicles: VehicleModel[];
+}
+
 export interface Category {
   id: string;
   name: string;
   slug: string;
   icon: string;
+  description: string;
+  brands: Brand[];
 }
 
 export interface Banner {

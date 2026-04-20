@@ -1,8 +1,107 @@
 [
-  { "id": "den-led", "name": "Đèn LED", "slug": "den-led", "icon": "💡" },
-  { "id": "den-laser", "name": "Đèn Laser", "slug": "den-laser", "icon": "🔦" },
-  { "id": "den-pha", "name": "Đèn Pha Bi", "slug": "den-pha", "icon": "🚗" },
-  { "id": "den-gam", "name": "Đèn Gầm", "slug": "den-gam", "icon": "🌟" },
-  { "id": "den-hau", "name": "Đèn Hậu LED", "slug": "den-hau", "icon": "🔴" },
-  { "id": "den-noi-that", "name": "Đèn Nội Thất", "slug": "den-noi-that", "icon": "✨" }
+  {
+    "id": "bi-cau",
+    "name": "Bi Cầu",
+    "slug": "bi-cau",
+    "icon": "🔦",
+    "description": "Bi cầu LED, Laser cao cấp cho các dòng xe",
+    "brands": [
+      {
+        "slug": "honda",
+        "name": "Honda",
+        "vehicles": [
+          { "slug": "honda-sh-2020-2025", "name": "Honda SH 2020–2025" },
+          { "slug": "honda-sh-2026", "name": "Honda SH 2026" },
+          { "slug": "honda-winner-x-2019-2025", "name": "Honda Winner X 2019–2025" },
+          { "slug": "honda-airblade-2020-2025", "name": "Honda Air Blade 2020–2025" },
+          { "slug": "honda-vision-2021-2025", "name": "Honda Vision 2021–2025" }
+        ]
+      },
+      {
+        "slug": "yamaha",
+        "name": "Yamaha",
+        "vehicles": [
+          { "slug": "yamaha-exciter-155-vva", "name": "Yamaha Exciter 155 VVA" },
+          { "slug": "yamaha-nvx-155-2021-2025", "name": "Yamaha NVX 155 2021–2025" },
+          { "slug": "yamaha-sirius-2019-2025", "name": "Yamaha Sirius 2019–2025" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tro-sang",
+    "name": "Trợ Sáng",
+    "slug": "tro-sang",
+    "icon": "💡",
+    "description": "Đèn trợ sáng, đèn gầm, LED phụ trợ",
+    "brands": [
+      {
+        "slug": "honda",
+        "name": "Honda",
+        "vehicles": [
+          { "slug": "honda-sh-2020-2025", "name": "Honda SH 2020–2025" },
+          { "slug": "honda-winner-x-2019-2025", "name": "Honda Winner X 2019–2025" },
+          { "slug": "honda-airblade-2020-2025", "name": "Honda Air Blade 2020–2025" }
+        ]
+      },
+      {
+        "slug": "yamaha",
+        "name": "Yamaha",
+        "vehicles": [
+          { "slug": "yamaha-exciter-155-vva", "name": "Yamaha Exciter 155 VVA" },
+          { "slug": "yamaha-nvx-155-2021-2025", "name": "Yamaha NVX 155 2021–2025" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hau-demi",
+    "name": "Hậu Demi",
+    "slug": "hau-demi",
+    "icon": "🔴",
+    "description": "Đèn hậu, đèn Demi, xi nhan LED",
+    "brands": [
+      {
+        "slug": "honda",
+        "name": "Honda",
+        "vehicles": [
+          { "slug": "honda-sh-2020-2025", "name": "Honda SH 2020–2025" },
+          { "slug": "honda-vision-2021-2025", "name": "Honda Vision 2021–2025" }
+        ]
+      },
+      {
+        "slug": "yamaha",
+        "name": "Yamaha",
+        "vehicles": [
+          { "slug": "yamaha-exciter-155-vva", "name": "Yamaha Exciter 155 VVA" },
+          { "slug": "yamaha-nvx-155-2021-2025", "name": "Yamaha NVX 155 2021–2025" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mach",
+    "name": "Mạch",
+    "slug": "mach",
+    "icon": "⚡",
+    "description": "Mạch điều khiển, mạch chuyển đổi, relay thông minh",
+    "brands": [
+      {
+        "slug": "honda",
+        "name": "Honda",
+        "vehicles": [
+          { "slug": "honda-sh-2020-2025", "name": "Honda SH 2020–2025" },
+          { "slug": "honda-winner-x-2019-2025", "name": "Honda Winner X 2019–2025" }
+        ]
+      },
+      {
+        "slug": "yamaha",
+        "name": "Yamaha",
+        "vehicles": [
+          { "slug": "yamaha-exciter-155-vva", "name": "Yamaha Exciter 155 VVA" },
+          { "slug": "yamaha-nvx-155-2021-2025", "name": "Yamaha NVX 155 2021–2025" }
+        ]
+      }
+    ]
+  }
 ]

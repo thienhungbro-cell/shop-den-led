@@ -110,7 +110,7 @@ export default function Header() {
             {categories.map((cat) => (
               <li key={cat.id}>
                 <Link
-                  href={`/danh-muc/${cat.slug}`}
+                  href={`/${cat.slug}`}
                   className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-primary-light transition-colors"
                 >
                   <span>{cat.icon}</span>
@@ -137,7 +137,7 @@ export default function Header() {
             {categories.map((cat) => (
               <li key={cat.id}>
                 <Link
-                  href={`/danh-muc/${cat.slug}`}
+                  href={`/${cat.slug}`}
                   onClick={() => setMenuOpen(false)}
                   className="flex items-center gap-2 px-3 py-2 rounded-lg text-gray-700 hover:bg-primary-light hover:text-primary text-sm"
                 >

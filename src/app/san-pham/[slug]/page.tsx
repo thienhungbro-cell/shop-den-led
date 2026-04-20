@@ -30,7 +30,7 @@ export default async function ProductDetailPage({
     : null;
 
   const related = (allProducts as unknown as Product[])
-    .filter((p) => p.categoryId === product.categoryId && p.id !== product.id)
+    .filter((p) => p.categorySlug === product.categorySlug && p.id !== product.id)
     .slice(0, 4);
 
   return (

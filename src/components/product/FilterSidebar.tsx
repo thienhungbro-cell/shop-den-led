@@ -76,9 +76,9 @@ export default function FilterSidebar() {
             {categories.map((cat) => (
               <li key={cat.id}>
                 <button
-                  onClick={() => setParam("category", cat.id)}
+                  onClick={() => setParam("category", cat.slug)}
                   className={`text-sm w-full text-left px-2 py-1 rounded transition-colors flex items-center gap-1.5 ${
-                    activeCategory === cat.id
+                    activeCategory === cat.slug
                       ? "text-primary font-semibold bg-primary-light"
                       : "text-gray-600 hover:text-primary"
                   }`}

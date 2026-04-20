@@ -23,7 +23,7 @@ export default function ProductsClient() {
         !query ||
         p.name.toLowerCase().includes(query.toLowerCase()) ||
         p.brand.toLowerCase().includes(query.toLowerCase());
-      const matchCat = !category || p.categoryId === category;
+      const matchCat = !category || p.categorySlug === category;
       const effectivePrice = p.salePrice ?? p.price;
       const matchPrice = effectivePrice >= minPrice && effectivePrice <= maxPrice;
       return matchQ && matchCat && matchPrice;

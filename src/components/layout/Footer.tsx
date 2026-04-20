@@ -27,7 +27,7 @@ export default function Footer() {
             {categories.map((cat) => (
               <li key={cat.id}>
                 <Link
-                  href={`/danh-muc/${cat.slug}`}
+                  href={`/${cat.slug}`}
                   className="hover:text-primary transition-colors"
                 >
                   {cat.name}
