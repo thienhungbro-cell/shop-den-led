@@ -3,7 +3,7 @@
     "id": "bi-cau",
     "name": "Bi Cầu",
     "slug": "bi-cau",
-    "icon": "🔦",
+    "icon": "/images/categories/bi-cau.png",
     "description": "Bi cầu LED, Laser cao cấp cho các dòng xe",
     "brands": [
       {
@@ -32,7 +32,7 @@
     "id": "tro-sang",
     "name": "Trợ Sáng",
     "slug": "tro-sang",
-    "icon": "💡",
+    "icon": "/images/categories/tro-sang.png",
     "description": "Đèn trợ sáng, đèn gầm, LED phụ trợ",
     "brands": [
       {
@@ -58,7 +58,7 @@
     "id": "hau-demi",
     "name": "Hậu Demi",
     "slug": "hau-demi",
-    "icon": "🔴",
+    "icon": "/images/categories/hau-demi.png",
     "description": "Đèn hậu, đèn Demi, xi nhan LED",
     "brands": [
       {
@@ -83,7 +83,7 @@
     "id": "mach",
     "name": "Mạch",
     "slug": "mach",
-    "icon": "⚡",
+    "icon": "/images/categories/mach.png",
     "description": "Mạch điều khiển, mạch chuyển đổi, relay thông minh",
     "brands": [
       {

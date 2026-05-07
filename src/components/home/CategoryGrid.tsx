@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import categories from "@/data/categories.json";
 
 export default function CategoryGrid() {
@@ -12,11 +13,19 @@ export default function CategoryGrid() {
             href={`/${cat.slug}`}
             className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-primary hover:-translate-y-1 transition-all group"
           >
-            <span className="text-3xl">{cat.icon}</span>
-            <span className="text-sm font-medium text-gray-700 group-hover:text-primary text-center leading-tight">
+            <div className="relative w-16 h-16 sm:w-20 sm:h-20 mb-2">
+              <Image
+                src={cat.icon}
+                alt={cat.name}
+                fill
+                className="object-contain group-hover:scale-110 transition-transform duration-300"
+                unoptimized
+              />
+            </div>
+            <span className="text-sm font-bold text-gray-800 group-hover:text-primary text-center leading-tight">
               {cat.name}
             </span>
-            <span className="text-xs text-gray-400">
+            <span className="text-[10px] text-gray-400">
               {cat.brands.length} hãng xe
             </span>
           </Link>

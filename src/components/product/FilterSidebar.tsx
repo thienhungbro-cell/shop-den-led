@@ -2,6 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import categories from "@/data/categories.json";
+import Image from "next/image";
 import { SlidersHorizontal } from "lucide-react";
 
 const PRICE_RANGES = [
@@ -83,7 +84,9 @@ export default function FilterSidebar() {
                       : "text-gray-600 hover:text-primary"
                   }`}
                 >
-                  <span>{cat.icon}</span>
+                  <div className="relative w-4 h-4">
+                    <Image src={cat.icon} alt="" fill className="object-contain" unoptimized />
+                  </div>
                   {cat.name}
                 </button>
               </li>

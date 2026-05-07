@@ -1,24 +1,30 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ShoppingCart, Search, Menu, X, Zap } from "lucide-react";
+import Image from "next/image";
 import { useCartStore } from "@/lib/store";
 import categories from "@/data/categories.json";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [query, setQuery] = useState("");
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const totalItems = useCartStore((s) => s.totalItems);
 
   return (
     <header className="sticky top-0 z-40 bg-white shadow-md">
       {/* Top bar */}
-      <div className="bg-primary text-white text-xs py-1 text-center">
+      <div className="bg-primary text-white text-[10px] sm:text-xs py-1.5 px-2 text-center leading-tight">
         🔥 Flash sale mỗi ngày — Giao hàng toàn quốc — Hotline:{" "}
-        <a href="tel:0912345678" className="font-bold underline">
-          0912.345.678
+        <a href="tel:0359663118" className="font-bold underline whitespace-nowrap">
+          0359.663.118
         </a>
       </div>
 
@@ -27,7 +33,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Zap size={28} className="text-primary fill-primary" />
-          <span className="font-bold text-xl text-primary tracking-tight">
+          <span className="font-bold text-lg sm:text-xl text-primary tracking-tight">
             XUÂN LỢI <span className="text-gray-800">STORE</span>
           </span>
         </Link>
@@ -67,7 +73,7 @@ export default function Header() {
             className="relative text-gray-700 hover:text-primary flex items-center gap-1"
           >
             <ShoppingCart size={24} />
-            {totalItems() > 0 && (
+            {mounted && totalItems() > 0 && (
               <span className="absolute -top-2 -right-2 bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
                 {totalItems()}
               </span>
@@ -113,7 +119,9 @@ export default function Header() {
                   href={`/${cat.slug}`}
                   className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-primary-light transition-colors"
                 >
-                  <span>{cat.icon}</span>
+                  <div className="relative w-5 h-5">
+                    <Image src={cat.icon} alt="" fill className="object-contain" unoptimized />
+                  </div>
                   {cat.name}
                 </Link>
               </li>
@@ -141,7 +149,9 @@ export default function Header() {
                   onClick={() => setMenuOpen(false)}
                   className="flex items-center gap-2 px-3 py-2 rounded-lg text-gray-700 hover:bg-primary-light hover:text-primary text-sm"
                 >
-                  <span>{cat.icon}</span>
+                  <div className="relative w-5 h-5">
+                    <Image src={cat.icon} alt="" fill className="object-contain" unoptimized />
+                  </div>
                   {cat.name}
                 </Link>
               </li>

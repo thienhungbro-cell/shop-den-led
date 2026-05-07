@@ -33,8 +33,8 @@ export default function LienHePage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-800">Điện thoại</p>
-                <a href="tel:0912345678" className="text-primary text-sm mt-1 block hover:underline">
-                  0912.345.678
+                <a href="tel:0359663118" className="text-primary text-sm mt-1 block hover:underline">
+                  0359.663.118
                 </a>
               </div>
             </div>

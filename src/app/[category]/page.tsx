@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import categories from "@/data/categories.json";
 import type { Category } from "@/types";
 
@@ -29,7 +30,9 @@ export default async function CategoryPage({
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="flex items-center gap-3 mb-8">
-        <span className="text-4xl">{cat.icon}</span>
+        <div className="relative w-12 h-12">
+          <Image src={cat.icon} alt={cat.name} fill className="object-contain" unoptimized />
+        </div>
         <div>
           <h1 className="text-2xl font-bold text-gray-900">{cat.name}</h1>
           <p className="text-sm text-gray-500">{cat.description}</p>
