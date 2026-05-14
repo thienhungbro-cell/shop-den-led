@@ -1,371 +1,74 @@
 [
   {
-    "id": "bi-cau-gtr-ultra-sh",
-    "slug": "bi-cau-gtr-ultra-3-0-honda-sh",
-    "name": "Bi Cầu GTR Ultra 3.0 — Honda SH 2020–2025",
+    "id": "aozoom-p20",
+    "slug": "aozoom-p20-motor-projector",
+    "name": "π20 - MOTOR PROJECTOR",
     "categorySlug": "bi-cau",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-sh-2020-2025",
-    "brand": "GTR",
-    "price": 4500000,
-    "salePrice": 3800000,
-    "images": [
-      "https://placehold.co/500x500/0f3460/ffffff?text=Bi+Cau+GTR+SH"
-    ],
-    "badge": "Bán chạy",
-    "description": "Bi Cầu GTR Ultra 3.0 cho Honda SH 2020–2025, ánh sáng siêu trắng, xa và rộng. Tích hợp motor servo điều chỉnh góc chiếu.",
-    "specs": {
-      "Loại": "Bi Cầu LED",
-      "Công suất": "55W",
-      "Màu sắc": "5500K",
-      "Đường kính": "3 inch",
-      "Tầm chiếu": "200m"
-    },
-    "inStock": true,
-    "featured": true,
-    "isFlashSale": false
-  },
-  {
-    "id": "bi-cau-aozoom-a4-sh",
-    "slug": "bi-cau-aozoom-a4-honda-sh",
-    "name": "Bi Cầu Aozoom A4 3 inch — Honda SH 2020–2025",
-    "categorySlug": "bi-cau",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-sh-2020-2025",
+    "brandSlug": "aozoom",
+    "vehicleSlug": "universal",
     "brand": "Aozoom",
-    "price": 5200000,
+    "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/533483/ffffff?text=Aozoom+A4+SH"
-    ],
-    "badge": "Cao cấp",
-    "description": "Aozoom A4 dòng bi cầu laser cao cấp cho Honda SH, nguồn laser nhập khẩu, độ bền vượt trội.",
-    "specs": {
-      "Loại": "Bi Cầu Laser",
-      "Công suất": "60W",
-      "Màu sắc": "5000K",
-      "Đường kính": "3 inch",
-      "Tuổi thọ": "60.000 giờ"
-    },
-    "inStock": true,
-    "featured": true,
-    "isFlashSale": false
-  },
-  {
-    "id": "bi-cau-gtr-sh-2026",
-    "slug": "bi-cau-gtr-ultra-honda-sh-2026",
-    "name": "Bi Cầu GTR Ultra — Honda SH 2026",
-    "categorySlug": "bi-cau",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-sh-2026",
-    "brand": "GTR",
-    "price": 4800000,
-    "salePrice": 4200000,
-    "images": [
-      "https://placehold.co/500x500/16213e/ffffff?text=GTR+SH+2026"
+      "https://placehold.co/500x500/000000/ffffff?text=Aozoom+P20"
     ],
     "badge": "Mới",
-    "description": "Bi Cầu GTR Ultra thế hệ mới thiết kế riêng cho Honda SH 2026. Cắm chân chính xác, không cần chế.",
+    "description": "Đèn Led Projector π20 công nghệ Đức, luồng sáng 5500K thuần khiết, mạnh mẽ.",
     "specs": {
-      "Loại": "Bi Cầu LED",
-      "Công suất": "55W",
-      "Màu sắc": "5500K",
-      "Đường kính": "3 inch",
-      "Tầm chiếu": "220m"
-    },
-    "inStock": true,
-    "featured": true,
-    "isFlashSale": false
-  },
-  {
-    "id": "bi-cau-osram-winner-x",
-    "slug": "bi-cau-osram-winner-x-2019-2025",
-    "name": "Bi Cầu Osram LEDriving — Honda Winner X 2019–2025",
-    "categorySlug": "bi-cau",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-winner-x-2019-2025",
-    "brand": "Osram",
-    "price": 3600000,
-    "salePrice": 2900000,
-    "images": [
-      "https://placehold.co/500x500/1a1a2e/ffffff?text=Osram+WinnerX"
-    ],
-    "badge": "Sale",
-    "description": "Bi Cầu Osram LEDriving cho Honda Winner X, tăng sáng 220%. Plug & play dễ lắp đặt.",
-    "specs": {
-      "Loại": "Bi Cầu LED",
-      "Công suất": "45W",
-      "Màu sắc": "6000K",
-      "Độ sáng": "4500lm",
-      "Tuổi thọ": "30.000 giờ"
-    },
-    "inStock": true,
-    "featured": false,
-    "isFlashSale": true
-  },
-  {
-    "id": "bi-cau-gtr-airblade",
-    "slug": "bi-cau-gtr-honda-airblade-2020-2025",
-    "name": "Bi Cầu GTR G-LED — Honda Air Blade 2020–2025",
-    "categorySlug": "bi-cau",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-airblade-2020-2025",
-    "brand": "GTR",
-    "price": 3200000,
-    "salePrice": null,
-    "images": [
-      "https://placehold.co/500x500/003366/ffffff?text=GTR+AirBlade"
-    ],
-    "badge": null,
-    "description": "Bi Cầu GTR G-LED thiết kế cho Honda Air Blade 2020–2025, ánh sáng trắng gọn, không chói ngược.",
-    "specs": {
-      "Loại": "Bi Cầu LED",
-      "Công suất": "40W",
-      "Màu sắc": "5500K",
-      "Đường kính": "2.5 inch"
+      "Công suất": "40W - 46W",
+      "Nhiệt màu": "5500K",
+      "CRI": "85",
+      "Tuổi thọ": ">20.000 giờ"
     },
     "inStock": true,
     "featured": false,
     "isFlashSale": false
   },
   {
-    "id": "bi-cau-philips-exciter",
-    "slug": "bi-cau-philips-yamaha-exciter-155",
-    "name": "Bi Cầu Philips Ultinon — Yamaha Exciter 155 VVA",
+    "id": "aozoom-p10",
+    "slug": "aozoom-p10-motor-projector",
+    "name": "π10 - MOTOR PROJECTOR",
     "categorySlug": "bi-cau",
-    "brandSlug": "yamaha",
-    "vehicleSlug": "yamaha-exciter-155-vva",
-    "brand": "Philips",
-    "price": 3800000,
-    "salePrice": 3200000,
-    "images": [
-      "https://placehold.co/500x500/2d4a22/ffffff?text=Philips+Exciter"
-    ],
-    "badge": "Hot",
-    "description": "Bi Cầu Philips Ultinon Pro9000 cho Yamaha Exciter 155, độ sáng 250% so với halogen. Chứng nhận EMC.",
-    "specs": {
-      "Loại": "Bi Cầu LED",
-      "Công suất": "50W",
-      "Màu sắc": "5800K",
-      "Độ sáng": "5000lm",
-      "Tuổi thọ": "50.000 giờ"
-    },
-    "inStock": true,
-    "featured": true,
-    "isFlashSale": true
-  },
-  {
-    "id": "bi-cau-aozoom-nvx",
-    "slug": "bi-cau-aozoom-yamaha-nvx-155",
-    "name": "Bi Cầu Aozoom A5 — Yamaha NVX 155 2021–2025",
-    "categorySlug": "bi-cau",
-    "brandSlug": "yamaha",
-    "vehicleSlug": "yamaha-nvx-155-2021-2025",
+    "brandSlug": "aozoom",
+    "vehicleSlug": "universal",
     "brand": "Aozoom",
-    "price": 4200000,
+    "price": 4000000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/1a472a/ffffff?text=Aozoom+NVX"
+      "https://placehold.co/500x500/000000/ffffff?text=Aozoom+P10"
     ],
-    "badge": null,
-    "description": "Bi Cầu Aozoom A5 cho Yamaha NVX 155, thiết kế nhỏ gọn, phù hợp chóa đèn NVX.",
+    "badge": "Mới",
+    "description": "Đèn Led Projector π10 công nghệ Đức, luồng sáng 5800K, thiết kế siêu nhỏ gọn 1.5-inch.",
     "specs": {
-      "Loại": "Bi Cầu Laser",
-      "Công suất": "55W",
-      "Màu sắc": "5000K",
-      "Đường kính": "2.5 inch"
+      "Công suất": "38W - 42W",
+      "Nhiệt màu": "5800K",
+      "CRI": "85",
+      "Tuổi thọ": ">20.000 giờ"
     },
     "inStock": true,
     "featured": false,
     "isFlashSale": false
   },
   {
-    "id": "tro-sang-osram-h11-sh",
-    "slug": "tro-sang-osram-h11-honda-sh",
-    "name": "Đèn Trợ Sáng H11 Osram — Honda SH 2020–2025",
-    "categorySlug": "tro-sang",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-sh-2020-2025",
-    "brand": "Osram",
-    "price": 850000,
-    "salePrice": 680000,
-    "images": [
-      "https://placehold.co/500x500/2d4a22/ffffff?text=Osram+H11"
-    ],
-    "badge": "Sale",
-    "description": "Đèn trợ sáng LED H11 Osram LEDriving cho Honda SH, ánh sáng 6000K tăng tầm nhìn ban đêm. Chống nước IP67.",
-    "specs": {
-      "Loại chân": "H11",
-      "Công suất": "12W x2",
-      "Màu sắc": "6000K",
-      "Chống nước": "IP67"
-    },
-    "inStock": true,
-    "featured": false,
-    "isFlashSale": true
-  },
-  {
-    "id": "tro-sang-philips-winner",
-    "slug": "tro-sang-philips-honda-winner-x",
-    "name": "Đèn Trợ Sáng Philips — Honda Winner X 2019–2025",
-    "categorySlug": "tro-sang",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-winner-x-2019-2025",
-    "brand": "Philips",
-    "price": 750000,
-    "salePrice": null,
-    "images": [
-      "https://placehold.co/500x500/1a472a/ffffff?text=Philips+WinX"
-    ],
-    "badge": null,
-    "description": "Đèn trợ sáng Philips Racing Vision cho Honda Winner X, cải thiện tầm nhìn 150%. Chịu rung và nhiệt tốt.",
-    "specs": {
-      "Công suất": "55W",
-      "Màu sắc": "3400K",
-      "Tuổi thọ": "15.000 giờ"
-    },
-    "inStock": true,
-    "featured": false,
-    "isFlashSale": false
-  },
-  {
-    "id": "tro-sang-led-exciter",
-    "slug": "tro-sang-led-yamaha-exciter-155",
-    "name": "Đèn Trợ Sáng LED Mini — Yamaha Exciter 155 VVA",
-    "categorySlug": "tro-sang",
-    "brandSlug": "yamaha",
-    "vehicleSlug": "yamaha-exciter-155-vva",
-    "brand": "Generic",
-    "price": 450000,
-    "salePrice": 350000,
-    "images": [
-      "https://placehold.co/500x500/805000/ffffff?text=LED+Exciter"
-    ],
-    "badge": "Giá tốt",
-    "description": "Đèn trợ sáng LED mini nhỏ gọn cho Yamaha Exciter 155, dễ lắp đặt, chống nước.",
-    "specs": {
-      "Công suất": "20W",
-      "Màu sắc": "6000K",
-      "Chống nước": "IP65"
-    },
-    "inStock": true,
-    "featured": false,
-    "isFlashSale": true
-  },
-  {
-    "id": "tro-sang-nvx-fog",
-    "slug": "tro-sang-fog-yamaha-nvx-155",
-    "name": "Đèn Trợ Sáng Fog Light — Yamaha NVX 155",
-    "categorySlug": "tro-sang",
-    "brandSlug": "yamaha",
-    "vehicleSlug": "yamaha-nvx-155-2021-2025",
+    "id": "aozoom-square-v3",
+    "slug": "aozoom-square-v3",
+    "name": "ĐÈN LED PROJECTOR SQUARE V3",
+    "categorySlug": "bi-cau",
+    "brandSlug": "aozoom",
+    "vehicleSlug": "universal",
     "brand": "Aozoom",
-    "price": 680000,
+    "price": 9200000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/003366/ffffff?text=Fog+NVX"
+      "https://placehold.co/500x500/000000/ffffff?text=Aozoom+Square+V3"
     ],
-    "badge": null,
-    "description": "Đèn trợ sáng fog light Aozoom cho Yamaha NVX 155, tích hợp bracket chuyên dụng.",
+    "badge": "Mới",
+    "description": "Đèn LED Projector Square V3 thiết kế 2 mắt ếch trợ sáng độc đáo, thấu kính hình vuông phù hợp xe chóa hẹp.",
     "specs": {
-      "Công suất": "25W",
-      "Màu sắc": "4300K",
-      "Chống nước": "IP67"
-    },
-    "inStock": true,
-    "featured": false,
-    "isFlashSale": false
-  },
-  {
-    "id": "hau-demi-led-sh",
-    "slug": "hau-demi-led-honda-sh-2020-2025",
-    "name": "Đèn Hậu Demi LED — Honda SH 2020–2025",
-    "categorySlug": "hau-demi",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-sh-2020-2025",
-    "brand": "NoName",
-    "price": 550000,
-    "salePrice": 450000,
-    "images": [
-      "https://placehold.co/500x500/7b0000/ffffff?text=Hau+Demi+SH"
-    ],
-    "badge": "Phổ biến",
-    "description": "Đèn hậu Demi LED cho Honda SH 2020–2025, thiết kế gọn, ánh sáng đỏ đều. Lắp đặt dễ dàng.",
-    "specs": {
-      "Màu sắc": "Đỏ",
-      "Điện áp": "12V",
-      "Chống nước": "IP65"
-    },
-    "inStock": true,
-    "featured": false,
-    "isFlashSale": true
-  },
-  {
-    "id": "hau-demi-vision",
-    "slug": "hau-demi-led-honda-vision-2021-2025",
-    "name": "Đèn Hậu Demi LED — Honda Vision 2021–2025",
-    "categorySlug": "hau-demi",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-vision-2021-2025",
-    "brand": "Generic",
-    "price": 380000,
-    "salePrice": null,
-    "images": [
-      "https://placehold.co/500x500/4a0000/ffffff?text=Hau+Vision"
-    ],
-    "badge": null,
-    "description": "Đèn hậu Demi LED thiết kế riêng cho Honda Vision 2021–2025, ánh sáng đỏ đều, bền bỉ.",
-    "specs": {
-      "Màu sắc": "Đỏ",
-      "Điện áp": "12V",
-      "Chống nước": "IP44"
-    },
-    "inStock": true,
-    "featured": false,
-    "isFlashSale": false
-  },
-  {
-    "id": "hau-demi-exciter-155",
-    "slug": "hau-demi-led-yamaha-exciter-155",
-    "name": "Đèn Hậu Demi LED — Yamaha Exciter 155 VVA",
-    "categorySlug": "hau-demi",
-    "brandSlug": "yamaha",
-    "vehicleSlug": "yamaha-exciter-155-vva",
-    "brand": "NoName",
-    "price": 420000,
-    "salePrice": 330000,
-    "images": [
-      "https://placehold.co/500x500/7b0000/ffffff?text=Hau+Exciter"
-    ],
-    "badge": "Giá tốt",
-    "description": "Đèn hậu Demi LED cho Yamaha Exciter 155 VVA, thiết kế chạy đuổi hiệu ứng đẹp mắt.",
-    "specs": {
-      "Hiệu ứng": "Chạy đuổi",
-      "Màu sắc": "Đỏ + Vàng",
-      "Điện áp": "12V"
-    },
-    "inStock": true,
-    "featured": true,
-    "isFlashSale": false
-  },
-  {
-    "id": "hau-demi-nvx-155",
-    "slug": "hau-demi-led-yamaha-nvx-155",
-    "name": "Đèn Hậu Demi LED — Yamaha NVX 155 2021–2025",
-    "categorySlug": "hau-demi",
-    "brandSlug": "yamaha",
-    "vehicleSlug": "yamaha-nvx-155-2021-2025",
-    "brand": "Aozoom",
-    "price": 520000,
-    "salePrice": null,
-    "images": [
-      "https://placehold.co/500x500/550000/ffffff?text=Hau+NVX"
-    ],
-    "badge": null,
-    "description": "Đèn hậu Demi LED Aozoom cho Yamaha NVX 155, thiết kế sang trọng, ánh sáng sắc nét.",
-    "specs": {
-      "Màu sắc": "Đỏ",
-      "Điện áp": "12V",
+      "Công suất": "50W - 80W",
+      "Nhiệt màu": "5500K",
+      "CRI": "85",
+      "Tuổi thọ": ">30.000 giờ",
       "Chống nước": "IP65"
     },
     "inStock": true,
@@ -373,96 +76,267 @@
     "isFlashSale": false
   },
   {
-    "id": "mach-can-bus-sh",
-    "slug": "mach-can-bus-honda-sh-2020-2025",
-    "name": "Mạch CAN Bus — Honda SH 2020–2025",
-    "categorySlug": "mach",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-sh-2020-2025",
-    "brand": "GTR",
-    "price": 650000,
-    "salePrice": 500000,
-    "images": [
-      "https://placehold.co/500x500/1a1a1a/ffffff?text=Mach+CAN+SH"
-    ],
-    "badge": "Bán chạy",
-    "description": "Mạch CAN Bus giải mã tín hiệu cho Honda SH 2020–2025, không báo lỗi OBD khi nâng cấp đèn LED.",
-    "specs": {
-      "Tương thích": "Honda SH 2020–2025",
-      "Canbus": "Có",
-      "Điện áp": "12V"
-    },
-    "inStock": true,
-    "featured": true,
-    "isFlashSale": false
-  },
-  {
-    "id": "mach-relay-winner",
-    "slug": "mach-relay-thong-minh-honda-winner-x",
-    "name": "Mạch Relay Thông Minh — Honda Winner X",
-    "categorySlug": "mach",
-    "brandSlug": "honda",
-    "vehicleSlug": "honda-winner-x-2019-2025",
-    "brand": "Generic",
-    "price": 280000,
+    "id": "kenzo-s500-pro-v2",
+    "slug": "kenzo-s500-pro-v2",
+    "name": "Bi Led hiệu suất cao Kenzo S500 Pro V2",
+    "categorySlug": "bi-cau",
+    "brandSlug": "kenzo",
+    "vehicleSlug": "universal",
+    "brand": "Kenzo",
+    "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/2c003e/ffffff?text=Relay+WinX"
+      "https://placehold.co/500x500/000000/ffffff?text=Kenzo+S500+Pro+V2"
     ],
-    "badge": null,
-    "description": "Mạch relay thông minh cho Honda Winner X, tự động chia công suất khi bật đèn, bảo vệ hệ thống điện.",
+    "badge": "Mới",
+    "description": "Bi Led Kenzo S500 Pro V2 hiệu suất cao, chip LED 9+2, chiều dài 126mm.",
     "specs": {
-      "Tương thích": "Honda Winner X 2019–2025",
-      "Công suất tối đa": "120W",
-      "Điện áp": "12V"
+      "Công suất Cos": "60W",
+      "Công suất Pha": "70W",
+      "Chiều dài": "126mm"
     },
     "inStock": true,
     "featured": false,
     "isFlashSale": false
   },
   {
-    "id": "mach-dieu-khien-exciter",
-    "slug": "mach-dieu-khien-yamaha-exciter-155",
-    "name": "Mạch Điều Khiển LED — Yamaha Exciter 155 VVA",
-    "categorySlug": "mach",
-    "brandSlug": "yamaha",
-    "vehicleSlug": "yamaha-exciter-155-vva",
-    "brand": "Generic",
-    "price": 350000,
-    "salePrice": 280000,
+    "id": "kenzo-s600-pro-v3",
+    "slug": "kenzo-s600-pro-v3",
+    "name": "Bi Led hiệu suất cao Kenzo S600 Pro V3",
+    "categorySlug": "bi-cau",
+    "brandSlug": "kenzo",
+    "vehicleSlug": "universal",
+    "brand": "Kenzo",
+    "price": 0,
+    "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/4a0080/ffffff?text=Mach+Exciter"
+      "https://placehold.co/500x500/000000/ffffff?text=Kenzo+S600+Pro+V3"
     ],
-    "badge": "Sale",
-    "description": "Mạch điều khiển LED chuyên dụng cho Yamaha Exciter 155, hỗ trợ chế độ chạy đuổi, nháy xi nhan.",
+    "badge": "Mới",
+    "description": "Bi Led Kenzo S600 Pro V3 chip LED 12 nhân, tăng sáng 25%, City Mode 15W.",
     "specs": {
-      "Chế độ": "5 chế độ",
-      "Điện áp": "12V",
-      "Chống nước": "IP44"
+      "Chip LED": "12 nhân",
+      "City Mode": "15W",
+      "Chiều dài": "129mm",
+      "Chống nước": "IP64"
     },
     "inStock": true,
     "featured": false,
-    "isFlashSale": true
+    "isFlashSale": false
   },
   {
-    "id": "mach-can-bus-nvx",
-    "slug": "mach-can-bus-yamaha-nvx-155",
-    "name": "Mạch CAN Bus — Yamaha NVX 155 2021–2025",
-    "categorySlug": "mach",
-    "brandSlug": "yamaha",
-    "vehicleSlug": "yamaha-nvx-155-2021-2025",
-    "brand": "Aozoom",
-    "price": 580000,
+    "id": "kenzo-s700-pro",
+    "slug": "kenzo-s700-pro",
+    "name": "Bi Led hiệu suất cao Kenzo S700 Pro",
+    "categorySlug": "bi-cau",
+    "brandSlug": "kenzo",
+    "vehicleSlug": "universal",
+    "brand": "Kenzo",
+    "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/1a1a2e/ffffff?text=Mach+NVX"
+      "https://placehold.co/500x500/000000/ffffff?text=Kenzo+S700+Pro"
     ],
-    "badge": null,
-    "description": "Mạch CAN Bus Aozoom cho Yamaha NVX 155, giải mã tín hiệu không báo lỗi khi thay đổi đèn.",
+    "badge": "Mới",
+    "description": "Bi Led Kenzo S700 Pro công suất khủng Cos 75W, Pha 100W, chip LED 16 nhân.",
     "specs": {
-      "Tương thích": "Yamaha NVX 155 2021–2025",
-      "Canbus": "Có",
-      "Điện áp": "12V"
+      "Công suất Cos": "75W",
+      "Công suất Pha": "100W",
+      "Nhiệt màu": "5500K",
+      "Chống nước": "IP64"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "kenzo-s900-pro",
+    "slug": "kenzo-s900-pro",
+    "name": "Bi Led LASER Kenzo S900 Pro",
+    "categorySlug": "bi-cau",
+    "brandSlug": "kenzo",
+    "vehicleSlug": "universal",
+    "brand": "Kenzo",
+    "price": 0,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/000000/ffffff?text=Kenzo+S900+Pro"
+    ],
+    "badge": "Mới",
+    "description": "Bi Led LASER Kenzo S900 Pro trang bị Module Laser NICHIA JAPAN 12W, chiếu xa >1200m.",
+    "specs": {
+      "Laser": "12W",
+      "Chiếu xa": ">1200m",
+      "Chiều dài": "139mm"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "titan-f150-plus-v2",
+    "slug": "bi-led-titan-moto-f150-plus-v2",
+    "name": "Bi LED Titan Moto F150 Plus V2",
+    "categorySlug": "bi-cau",
+    "brandSlug": "titan",
+    "vehicleSlug": "universal",
+    "brand": "Titan",
+    "price": 0,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/000000/ffffff?text=Titan+F150+Plus+V2"
+    ],
+    "badge": "Mới",
+    "description": "Bi LED Titan Moto F150 Plus V2 công suất Cos 60W, Pha 70W, thấu kính TIR.",
+    "specs": {
+      "Công suất Cos": "60W",
+      "Công suất Pha": "70W",
+      "Chiều dài": "130mm"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "titan-f150-plus-square",
+    "slug": "bi-led-titan-moto-f150-plus-square",
+    "name": "BI LED TITAN MOTO F150 PLUS SQUARE",
+    "categorySlug": "bi-cau",
+    "brandSlug": "titan",
+    "vehicleSlug": "universal",
+    "brand": "Titan",
+    "price": 0,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/000000/ffffff?text=Titan+F150+Plus+Square"
+    ],
+    "badge": "Mới",
+    "description": "Bi LED Titan Moto F150 Plus Square thiết kế vuông, công suất Cos 60W, Pha 70W.",
+    "specs": {
+      "Công suất Cos": "60W",
+      "Công suất Pha": "70W",
+      "Nhiệt màu": "5500K",
+      "Chiều dài": "~130mm"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "titan-f150-square",
+    "slug": "bi-led-titan-moto-f150-square",
+    "name": "BI LED TITAN MOTO F150 SQUARE",
+    "categorySlug": "bi-cau",
+    "brandSlug": "titan",
+    "vehicleSlug": "universal",
+    "brand": "Titan",
+    "price": 6000000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/000000/ffffff?text=Titan+F150+Square"
+    ],
+    "badge": "Mới",
+    "description": "Bi LED Titan Moto F150 Square công suất Cos 60W, Pha 70W, nhiệt màu 5200K.",
+    "specs": {
+      "Công suất Cos": "60W",
+      "Công suất Pha": "70W",
+      "Nhiệt màu": "5200K"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "titan-f150",
+    "slug": "bi-led-titan-f150",
+    "name": "BI LED TITAN MOTO F150",
+    "categorySlug": "bi-cau",
+    "brandSlug": "titan",
+    "vehicleSlug": "universal",
+    "brand": "Titan",
+    "price": 6000000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/000000/ffffff?text=Titan+F150"
+    ],
+    "badge": "Mới",
+    "description": "Bi LED Titan Moto F150 công suất Cos 55W, Pha 65W, nhiệt màu 5200K.",
+    "specs": {
+      "Công suất Cos": "55W",
+      "Công suất Pha": "65W",
+      "Nhiệt màu": "5200K"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "titan-black-mini-18-laser",
+    "slug": "titan-moto-black-mini-18-laser",
+    "name": "TITAN MOTO BLACK MINI 1.8 LASER",
+    "categorySlug": "bi-cau",
+    "brandSlug": "titan",
+    "vehicleSlug": "universal",
+    "brand": "Titan",
+    "price": 4000000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/000000/ffffff?text=Titan+Black+Mini+1.8+Laser"
+    ],
+    "badge": "Mới",
+    "description": "Titan Moto Black Mini 1.8 Laser công suất Cos 50W, Pha 60W, nhiệt màu 5000K.",
+    "specs": {
+      "Công suất Cos": "50W",
+      "Công suất Pha": "60W",
+      "Nhiệt màu": "5000K"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "titan-black-mini-2",
+    "slug": "bi-led-titan-moto-black-mini-2",
+    "name": "BI LED TITAN MOTO BLACK MINI 2.0 INCH",
+    "categorySlug": "bi-cau",
+    "brandSlug": "titan",
+    "vehicleSlug": "universal",
+    "brand": "Titan",
+    "price": 3400000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/000000/ffffff?text=Titan+Black+Mini+2"
+    ],
+    "badge": "Mới",
+    "description": "Bi LED Titan Moto Black Mini 2.0 Inch công suất Cos 40W, Pha 45W, nhiệt màu 5000K.",
+    "specs": {
+      "Công suất Cos": "40W",
+      "Công suất Pha": "45W",
+      "Nhiệt màu": "5000K"
+    },
+    "inStock": true,
+    "featured": false,
+    "isFlashSale": false
+  },
+  {
+    "id": "titan-black-mini-20-square",
+    "slug": "titan-moto-black-mini-20-square",
+    "name": "TITAN MOTO BLACK MINI 2.0 SQUARE",
+    "categorySlug": "bi-cau",
+    "brandSlug": "titan",
+    "vehicleSlug": "universal",
+    "brand": "Titan",
+    "price": 3400000,
+    "salePrice": null,
+    "images": [
+      "https://placehold.co/500x500/000000/ffffff?text=Titan+Black+Mini+2.0+Square"
+    ],
+    "badge": "Mới",
+    "description": "Titan Moto Black Mini 2.0 Square công suất Cos 40W, Pha 45W, nhiệt màu 5000K.",
+    "specs": {
+      "Công suất Cos": "40W",
+      "Công suất Pha": "45W",
+      "Nhiệt màu": "5000K"
     },
     "inStock": true,
     "featured": false,
