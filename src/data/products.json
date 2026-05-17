@@ -10,7 +10,7 @@
     "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Aozoom+P20"
+      "/images/products/π20 - MOTOR PROJECTOR.png"
     ],
     "badge": "Mới",
     "description": "Đèn Led Projector π20 công nghệ Đức, luồng sáng 5500K thuần khiết, mạnh mẽ.",
@@ -35,7 +35,7 @@
     "price": 4000000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Aozoom+P10"
+      "/images/products/π10 - MOTOR PROJECTOR.png"
     ],
     "badge": "Mới",
     "description": "Đèn Led Projector π10 công nghệ Đức, luồng sáng 5800K, thiết kế siêu nhỏ gọn 1.5-inch.",
@@ -60,7 +60,7 @@
     "price": 9200000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Aozoom+Square+V3"
+      "/images/products/ĐÈN LED PROJECTOR SQUARE V3.png"
     ],
     "badge": "Mới",
     "description": "Đèn LED Projector Square V3 thiết kế 2 mắt ếch trợ sáng độc đáo, thấu kính hình vuông phù hợp xe chóa hẹp.",
@@ -86,7 +86,7 @@
     "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Kenzo+S500+Pro+V2"
+      "/images/products/Bi Led hiệu suất cao Kenzo S500 Pro V2.PNG"
     ],
     "badge": "Mới",
     "description": "Bi Led Kenzo S500 Pro V2 hiệu suất cao, chip LED 9+2, chiều dài 126mm.",
@@ -110,7 +110,7 @@
     "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Kenzo+S600+Pro+V3"
+      "/images/products/Bi Led hiệu suất cao Kenzo S600 Pro V3.PNG"
     ],
     "badge": "Mới",
     "description": "Bi Led Kenzo S600 Pro V3 chip LED 12 nhân, tăng sáng 25%, City Mode 15W.",
@@ -135,7 +135,7 @@
     "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Kenzo+S700+Pro"
+      "/images/products/Bi Led hiệu suất cao Kenzo S700 Pro V2.PNG"
     ],
     "badge": "Mới",
     "description": "Bi Led Kenzo S700 Pro công suất khủng Cos 75W, Pha 100W, chip LED 16 nhân.",
@@ -160,7 +160,7 @@
     "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Kenzo+S900+Pro"
+      "/images/products/Bi Led LASER Kenzo S900 Pro.PNG"
     ],
     "badge": "Mới",
     "description": "Bi Led LASER Kenzo S900 Pro trang bị Module Laser NICHIA JAPAN 12W, chiếu xa >1200m.",
@@ -184,7 +184,7 @@
     "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Titan+F150+Plus+V2"
+      "/images/products/BI LED TITAN MOTO F150 PLUS V2.jpeg"
     ],
     "badge": "Mới",
     "description": "Bi LED Titan Moto F150 Plus V2 công suất Cos 60W, Pha 70W, thấu kính TIR.",
@@ -208,7 +208,7 @@
     "price": 0,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Titan+F150+Plus+Square"
+      "/images/products/BI LED TITAN MOTO F150 PLUS SQUARE.jpg"
     ],
     "badge": "Mới",
     "description": "Bi LED Titan Moto F150 Plus Square thiết kế vuông, công suất Cos 60W, Pha 70W.",
@@ -233,7 +233,7 @@
     "price": 6000000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Titan+F150+Square"
+      "/images/products/BI LED TITAN MOTO F150 SQUARE.jpg"
     ],
     "badge": "Mới",
     "description": "Bi LED Titan Moto F150 Square công suất Cos 60W, Pha 70W, nhiệt màu 5200K.",
@@ -257,7 +257,7 @@
     "price": 6000000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Titan+F150"
+      "/images/products/BI LED TITAN MOTO F150.jpg"
     ],
     "badge": "Mới",
     "description": "Bi LED Titan Moto F150 công suất Cos 55W, Pha 65W, nhiệt màu 5200K.",
@@ -281,7 +281,7 @@
     "price": 4000000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Titan+Black+Mini+1.8+Laser"
+      "/images/products/TITAN MOTO BLACK MINI 1.8 LASER.jpg"
     ],
     "badge": "Mới",
     "description": "Titan Moto Black Mini 1.8 Laser công suất Cos 50W, Pha 60W, nhiệt màu 5000K.",
@@ -305,7 +305,7 @@
     "price": 3400000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Titan+Black+Mini+2"
+      "/images/products/BI LED TITAN MOTO BLACK MINI 2.0 INCH.jpg"
     ],
     "badge": "Mới",
     "description": "Bi LED Titan Moto Black Mini 2.0 Inch công suất Cos 40W, Pha 45W, nhiệt màu 5000K.",
@@ -329,7 +329,7 @@
     "price": 3400000,
     "salePrice": null,
     "images": [
-      "https://placehold.co/500x500/000000/ffffff?text=Titan+Black+Mini+2.0+Square"
+      "/images/products/TITAN MOTO BLACK MINI 2.0 SQUARE.jpg"
     ],
     "badge": "Mới",
     "description": "Titan Moto Black Mini 2.0 Square công suất Cos 40W, Pha 45W, nhiệt màu 5000K.",

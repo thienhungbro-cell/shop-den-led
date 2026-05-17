@@ -40,7 +40,10 @@ export default async function BrandPage({
   if (!b) notFound();
 
   const products = (allProducts as unknown as Product[]).filter(
-    (p) => p.categorySlug === cat.slug && p.brandSlug === brand
+    (p) =>
+      p.categorySlug === cat.slug &&
+      (p.vehicleSlug === "universal" ||
+        b.vehicles.some((v) => v.slug === p.vehicleSlug))
   );
 
   return (
@@ -69,7 +72,7 @@ export default async function BrandPage({
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {b.vehicles.map((vehicle) => {
           const count = products.filter(
-            (p) => p.vehicleSlug === vehicle.slug
+            (p) => p.vehicleSlug === vehicle.slug || p.vehicleSlug === "universal"
           ).length;
           return (
             <Link

@@ -56,8 +56,7 @@ export default async function VehiclePage({
   const products = (allProducts as unknown as Product[]).filter(
     (p) =>
       p.categorySlug === cat.slug &&
-      p.brandSlug === brand &&
-      p.vehicleSlug === vehicle
+      (p.vehicleSlug === "universal" || p.vehicleSlug === vehicle)
   );
 
   return (
