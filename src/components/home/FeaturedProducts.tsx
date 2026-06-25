@@ -8,19 +8,16 @@ export default function FeaturedProducts() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-8">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-bold text-gray-800">
+      <div className="flex items-center justify-between mb-6">
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
           ⭐ Sản phẩm nổi bật
         </h2>
-        <Link
-          href="/san-pham"
-          className="text-sm text-primary hover:underline font-medium"
-        >
+        <Link href="/san-pham" className="text-sm text-primary hover:underline font-medium">
           Xem tất cả →
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
         {featured.map((p) => (
           <ProductCard key={p.id} product={p} />
         ))}

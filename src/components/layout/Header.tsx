@@ -19,58 +19,61 @@ export default function Header() {
   const totalItems = useCartStore((s) => s.totalItems);
 
   return (
-    <header className="sticky top-0 z-40 bg-white shadow-md">
+    <header className="sticky top-0 z-40 bg-[#15171C] shadow-md">
       {/* Top bar */}
       <div className="bg-primary text-white text-[10px] sm:text-xs py-1.5 px-2 text-center leading-tight">
         🔥 Flash sale mỗi ngày — Giao hàng toàn quốc — Hotline:{" "}
         <a href="tel:0359663118" className="font-bold underline whitespace-nowrap">
-          0359.663.118
+          0359663118
         </a>
       </div>
 
       {/* Main nav */}
-      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center gap-4">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <Zap size={28} className="text-primary fill-primary" />
-          <span className="font-bold text-lg sm:text-xl text-primary tracking-tight">
-            XUÂN LỢI <span className="text-gray-800">STORE</span>
+      <div className="max-w-7xl mx-auto px-4 h-16 grid grid-cols-3 items-center gap-4">
+        <div className="flex items-center gap-3">
+          <button
+            className="md:hidden text-white bg-slate-200/15 border border-slate-300/30 rounded-xl p-2 hover:bg-slate-200/25 transition"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        <Link href="/" className="flex items-center justify-center gap-2">
+          <span className="font-bold text-lg sm:text-xl text-primary tracking-tight whitespace-nowrap">
+            XUÂN LỢI <span className="text-white">STORE</span>
           </span>
         </Link>
 
-        {/* Search bar — desktop */}
-        <div className="hidden md:flex flex-1 max-w-xl">
-          <div className="relative w-full">
-            <input
-              type="text"
-              placeholder="Tìm kiếm đèn xe, phụ kiện..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              className="w-full border border-gray-300 rounded-full pl-4 pr-10 py-2 text-sm focus:outline-none focus:border-primary"
-            />
-            <Link
-              href={query ? `/san-pham?q=${encodeURIComponent(query)}` : "/san-pham"}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary"
-            >
-              <Search size={18} />
-            </Link>
+        <div className="flex items-center justify-end gap-3">
+          <div className="hidden md:flex flex-1 max-w-xl">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder="Tìm kiếm đèn xe, phụ kiện..."
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                className="w-full border border-gray-300 rounded-full pl-4 pr-10 py-2 text-sm focus:outline-none focus:border-primary"
+              />
+              <Link
+                href={query ? `/san-pham?q=${encodeURIComponent(query)}` : "/san-pham"}
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-white bg-slate-200/15 border border-slate-300/30 rounded-full p-2 hover:bg-slate-200/25 transition"
+              >
+                <Search size={18} />
+              </Link>
+            </div>
           </div>
-        </div>
 
-        {/* Right actions */}
-        <div className="ml-auto flex items-center gap-3">
-          {/* Search icon mobile */}
           <button
-            className="md:hidden text-gray-600 hover:text-primary"
+            className="md:hidden text-white bg-slate-200/15 border border-slate-300/30 rounded-xl p-2 hover:bg-slate-200/25 transition"
             onClick={() => setSearchOpen(!searchOpen)}
           >
             <Search size={22} />
           </button>
 
-          {/* Cart */}
           <Link
             href="/gio-hang"
-            className="relative text-gray-700 hover:text-primary flex items-center gap-1"
+            className="relative text-white bg-slate-200/15 border border-slate-300/30 rounded-xl p-2 flex items-center gap-1 hover:bg-slate-200/25 transition"
           >
             <ShoppingCart size={24} />
             {mounted && totalItems() > 0 && (
@@ -79,14 +82,6 @@ export default function Header() {
               </span>
             )}
           </Link>
-
-          {/* Hamburger mobile */}
-          <button
-            className="md:hidden text-gray-600 hover:text-primary"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
       </div>
 
