@@ -104,34 +104,7 @@ export default function Header() {
         </div>
       )}
 
-      {/* Category nav — desktop */}
-      <nav className="hidden md:block bg-gray-50 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4">
-          <ul className="flex gap-1">
-            {categories.map((cat) => (
-              <li key={cat.id}>
-                <Link
-                  href={`/${cat.slug}`}
-                  className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-primary-light transition-colors"
-                >
-                  <div className="relative w-5 h-5">
-                    <Image src={cat.icon} alt="" fill className="object-contain" unoptimized />
-                  </div>
-                  {cat.name}
-                </Link>
-              </li>
-            ))}
-            <li className="ml-auto">
-              <Link
-                href="/san-pham"
-                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-primary"
-              >
-                Tất cả sản phẩm →
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      {/* Categories are available inside the mobile/hamberger menu only per request */}
 
       {/* Mobile menu */}
       {menuOpen && (

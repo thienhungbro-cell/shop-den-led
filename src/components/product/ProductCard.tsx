@@ -12,9 +12,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const discount =
     product.salePrice ? calcDiscount(product.price, product.salePrice) : null;
   
-  // Mock rating (5 stars max)
-  const rating = 4.5;
-  const reviewCount = 128;
+  // Always display 5 stars (no numeric review count)
 
   return (
     <div className="bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-xl transition-all group flex flex-col relative">
@@ -66,22 +64,17 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="p-3 flex flex-col flex-1 gap-2">
         <div className="text-xs text-gray-500 uppercase tracking-wide font-medium">{product.brand}</div>
         
-        {/* Rating */}
+        {/* Rating: always 5 filled stars */}
         <div className="flex items-center gap-1.5">
           <div className="flex gap-0.5">
             {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                size={14}
-                className={i < Math.floor(rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}
-              />
+              <Star key={i} size={14} className="fill-yellow-400 text-yellow-400" />
             ))}
           </div>
-          <span className="text-xs text-gray-600">({reviewCount})</span>
         </div>
 
         <Link href={`/san-pham/${product.slug}`}>
-          <h3 className="text-sm md:text-base font-medium text-gray-900 line-clamp-2 hover:text-primary transition-colors leading-snug">
+          <h3 className="text-sm md:text-base font-semibold text-gray-900 line-clamp-2 hover:text-primary transition-colors leading-snug">
             {product.name}
           </h3>
         </Link>

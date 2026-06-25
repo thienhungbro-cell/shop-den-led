@@ -76,14 +76,13 @@ export default async function ProductDetailPage({
               {product.name}
             </h1>
 
-            {/* Rating mock */}
+            {/* Rating: always 5 filled stars */}
             <div className="flex items-center gap-2 mb-6">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} className={i < 4 ? "text-yellow-400 text-lg" : "text-gray-300 text-lg"}>★</span>
+                  <span key={i} className="text-yellow-400 text-lg">★</span>
                 ))}
               </div>
-              <span className="text-sm text-gray-600">(128 đánh giá)</span>
             </div>
 
             {/* Price */}

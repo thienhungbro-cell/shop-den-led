@@ -8,7 +8,7 @@ const ZALO = "0359663118";
 
 export default function FloatingButtons() {
   return (
-    <div className="fixed bottom-50 right-4 sm:bottom-24 sm:right-6 z-50 flex flex-col gap-3 sm:gap-4 items-end">
+    <div className="fixed bottom-18 right-4 sm:bottom-24 sm:right-6 z-50 flex flex-col gap-3 sm:gap-4 items-end">
       {/* Zalo - Real Image Icon */}
       <a
         href={`https://zalo.me/${ZALO}`}
@@ -19,7 +19,7 @@ export default function FloatingButtons() {
         <img 
           src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" 
           alt="Zalo" 
-          className="w-full h-full rounded-[1.2rem] shadow-[0_8px_16px_rgba(0,104,255,0.3)]"
+          className="w-full h-full rounded-[1.2rem] shadow-[0_20px_40px_rgba(0,104,255,0.35)]"
         />
         <span className="absolute -left-16 bg-white text-gray-800 px-2 py-1 rounded-md text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-sm pointer-events-none border border-gray-100">
           Zalo Chat
