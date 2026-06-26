@@ -16,7 +16,7 @@ export default function Header() {
   useEffect(() => {
     setMounted(true);
   }, []);
-  const totalItems = useCartStore((s) => s.totalItems);
+  const totalItems = useCartStore((s) => s.totalItems());
 
   return (
     <header className="sticky top-0 z-40 bg-[#15171C] shadow-md">
@@ -76,9 +76,9 @@ export default function Header() {
             className="relative text-white bg-slate-200/15 border border-slate-300/30 rounded-xl p-2 flex items-center gap-1 hover:bg-slate-200/25 transition"
           >
             <ShoppingCart size={24} />
-            {mounted && totalItems() > 0 && (
+            {mounted && totalItems > 0 && (
               <span className="absolute -top-2 -right-2 bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
-                {totalItems()}
+                {totalItems}
               </span>
             )}
           </Link>

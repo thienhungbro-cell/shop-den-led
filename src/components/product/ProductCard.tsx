@@ -4,13 +4,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { ShoppingCart, Tag, Star, Eye } from "lucide-react";
 import { useCartStore } from "@/lib/store";
+import { useToastStore } from "@/lib/toastStore";
 import { formatPrice, calcDiscount } from "@/lib/utils";
 import type { Product } from "@/types";
 
 export default function ProductCard({ product }: { product: Product }) {
   const addItem = useCartStore((s) => s.addItem);
+  const cartItems = useCartStore((s) => s.items);
+  const addToast = useToastStore((s) => s.addToast);
   const discount =
     product.salePrice ? calcDiscount(product.price, product.salePrice) : null;
+
+  const alreadyInCart = cartItems.some((item) => item.product.id === product.id);
   
   // Always display 5 stars (no numeric review count)
 
@@ -30,13 +35,10 @@ export default function ProductCard({ product }: { product: Product }) {
 
         {/* Hover overlay with quick view */}
         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-t-lg">
-          <Link
-            href={`/san-pham/${product.slug}`}
-            className="flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-md font-medium hover:bg-primary hover:text-white transition-all"
-          >
+          <div className="flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-md font-medium transition-all">
             <Eye size={16} />
             Xem chi tiết
-          </Link>
+          </div>
         </div>
 
         {/* Badges */}
@@ -101,9 +103,18 @@ export default function ProductCard({ product }: { product: Product }) {
           {/* Action buttons */}
           <div className="flex gap-2">
             <button
-              onClick={() => product.inStock && addItem(product)}
+              onClick={() => {
+                if (!product.inStock) return;
+                addItem(product);
+                addToast(
+                  alreadyInCart
+                    ? "Sản phẩm đã có trong giỏ, số lượng đã được cập nhật"
+                    : "Đã thêm vào giỏ hàng",
+                  "success"
+                );
+              }}
               disabled={!product.inStock}
-              className="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark disabled:bg-gray-300 text-white text-sm font-medium py-2 rounded-md transition-colors"
+              className="flex-1 flex items-center justify-center gap-2 whitespace-nowrap bg-primary hover:bg-primary-dark disabled:bg-gray-300 text-white text-sm font-medium py-2 rounded-md transition-colors"
             >
               <ShoppingCart size={16} />
               <span className="hidden sm:inline">Giỏ</span>
