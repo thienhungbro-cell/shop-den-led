@@ -125,7 +125,7 @@ export default function CartClient() {
           </div>
 
           <Link
-            href="/lien-he"
+            href="/gio-hang/thanh-toan"
             className="block w-full text-center bg-primary hover:bg-primary-dark text-white font-semibold py-3.5 rounded-xl transition-colors"
           >
             Đặt hàng ngay
