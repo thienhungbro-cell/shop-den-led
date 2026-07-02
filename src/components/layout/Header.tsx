@@ -23,12 +23,12 @@ export default function Header() {
       {/* Top bar */}
       <div className="bg-primary text-white text-[10px] sm:text-xs py-1.5 overflow-hidden leading-tight">
         <div className="animate-marquee whitespace-nowrap inline-block">
-          🔥 Xuân Lợi Store kính chào quý khách &nbsp;—&nbsp; Giao hàng toàn quốc &nbsp;—&nbsp; Hotline:{" "}
+          💡 XUÂN LỢI STORE &nbsp;—&nbsp; NÂNG TẦM ÁNH SÁNG, AN TOÀN TRÊN MỌI HÀNH TRÌNH &nbsp;—&nbsp; Hotline hỗ trợ:{" "}
           <a href="tel:0359663118" className="font-bold underline">
             0359663118
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          🔥 Xuân Lợi Store kính chào quý khách &nbsp;—&nbsp; Giao hàng toàn quốc &nbsp;—&nbsp; Hotline:{" "}
+          💡 XUÂN LỢI STORE &nbsp;—&nbsp; NÂNG TẦM ÁNH SÁNG, AN TOÀN TRÊN MỌI HÀNH TRÌNH &nbsp;—&nbsp; Hotline hỗ trợ:{" "}
           <a href="tel:0359663118" className="font-bold underline">
             0359663118
           </a>
@@ -83,12 +83,22 @@ export default function Header() {
 
         <div className={`flex-1 grid grid-cols-3 items-center gap-4 ${searchOpen ? "hidden md:grid" : "grid"}`}>
           <div className="flex items-center gap-3">
+            {/* Mobile: hamburger */}
             <button
               className="md:hidden text-white bg-slate-200/15 border border-slate-300/30 rounded-xl p-2 hover:bg-slate-200/25 transition"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
+
+            {/* Desktop: Sản Phẩm link */}
+            <Link
+              href="/san-pham"
+              className="hidden md:flex items-center gap-2 text-sm font-semibold text-gray-200 bg-white/5 border border-white/10 px-4 py-2 rounded-xl hover:bg-primary hover:border-primary hover:text-white transition-all duration-200 shadow-sm group"
+            >
+              <Menu size={16} className="text-primary group-hover:text-white transition-colors duration-200" />
+              <span>Sản Phẩm</span>
+            </Link>
           </div>
 
           <Link href="/" className="flex items-center justify-center gap-2">
