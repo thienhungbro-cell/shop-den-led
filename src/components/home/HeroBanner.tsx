@@ -67,25 +67,6 @@ export default function HeroBanner() {
           />
         ))}
       </div>
-
-      {/* Center search (desktop) */}
-      <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-30 w-[70%] max-w-4xl">
-        <div className="w-full bg-white rounded-full shadow-md border border-gray-200 px-4 py-3 flex items-center gap-3">
-          <select className="bg-transparent appearance-none outline-none text-sm text-gray-600">
-            <option value="">Tất cả danh mục</option>
-            <option value="den-xe">Đèn xe</option>
-            <option value="phu-kien">Phụ kiện</option>
-          </select>
-          <input
-            type="text"
-            placeholder="Tìm kiếm sản phẩm, mã hàng, thương hiệu..."
-            className="flex-1 text-sm outline-none"
-          />
-          <button className="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">
-            Tìm kiếm
-          </button>
-        </div>
-      </div>
     </div>
   );
 }

@@ -12,7 +12,6 @@ type SortBy = "newest" | "price-asc" | "price-desc" | "popular";
 
 export default function ProductsClient() {
   const params = useSearchParams();
-  const [localQuery, setLocalQuery] = useState(params.get("q") ?? "");
   const [sortBy, setSortBy] = useState<SortBy>("newest");
 
   const query = params.get("q") ?? "";
@@ -44,40 +43,8 @@ export default function ProductsClient() {
     return results;
   }, [query, category, minPrice, maxPrice, sortBy]);
 
-  const handleSearch = () => {
-    const p = new URLSearchParams(params.toString());
-    if (localQuery) p.set("q", localQuery);
-    else p.delete("q");
-    window.location.search = p.toString();
-  };
-
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Search banner */}
-      <div className="bg-white border-b border-gray-200 sticky top-[88px] z-30">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex gap-3">
-            <div className="relative flex-1 max-w-lg">
-              <input
-                type="text"
-                placeholder="Tìm kiếm sản phẩm..."
-                value={localQuery}
-                onChange={(e) => setLocalQuery(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") handleSearch();
-                }}
-                className="w-full border border-gray-300 rounded-full pl-4 pr-10 py-2.5 text-sm focus:outline-none focus:border-primary"
-              />
-              <button
-                onClick={handleSearch}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary"
-              >
-                <Search size={18} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex gap-6">

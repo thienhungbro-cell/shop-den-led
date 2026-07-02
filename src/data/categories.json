@@ -55,31 +55,6 @@
     ]
   },
   {
-    "id": "hau-demi",
-    "name": "Hậu Demi",
-    "slug": "hau-demi",
-    "icon": "/images/categories/hau-demi.png",
-    "description": "Đèn hậu, đèn Demi, xi nhan LED",
-    "brands": [
-      {
-        "slug": "honda",
-        "name": "Honda",
-        "vehicles": [
-          { "slug": "honda-sh-2020-2025", "name": "Honda SH 2020–2025" },
-          { "slug": "honda-vision-2021-2025", "name": "Honda Vision 2021–2025" }
-        ]
-      },
-      {
-        "slug": "yamaha",
-        "name": "Yamaha",
-        "vehicles": [
-          { "slug": "yamaha-exciter-155-vva", "name": "Yamaha Exciter 155 VVA" },
-          { "slug": "yamaha-nvx-155-2021-2025", "name": "Yamaha NVX 155 2021–2025" }
-        ]
-      }
-    ]
-  },
-  {
     "id": "mach",
     "name": "Mạch",
     "slug": "mach",

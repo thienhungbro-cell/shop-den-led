@@ -31,6 +31,10 @@ body {
   .animate-slide-in {
     animation: slide-in 0.32s ease-out forwards;
   }
+
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
 }
 
 @keyframes slide-in {
@@ -42,4 +46,9 @@ body {
     transform: translateY(0) scale(1);
     opacity: 1;
   }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
 }
