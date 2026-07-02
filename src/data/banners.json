@@ -4,5 +4,17 @@
     "image": "/images/banners/led-vehicle-lights.png",
     "alt": "XUÂN LỢI STORE — Hệ Thống Đèn Tăng Sáng Ô Tô & Xe Máy",
     "link": "/san-pham"
+  },
+  {
+    "id": 2,
+    "image": "/images/banners/bi-cau-led.png",
+    "alt": "LUMINEX MOTO LIGHTING — Premium Bi-Cầu LED Technology",
+    "link": "/san-pham?category=bi-cau"
+  },
+  {
+    "id": 3,
+    "image": "/images/banners/led-tro-sang.png",
+    "alt": "CUSTOM MOTO LIGHTING — Đèn Trợ Sáng Cao Cấp",
+    "link": "/san-pham?category=tro-sang"
   }
 ]

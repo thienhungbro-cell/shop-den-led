@@ -40,10 +40,21 @@ export default function ProductsClient() {
 
   const query = params.get("q") ?? "";
   const category = params.get("category") ?? "";
-  const minPrice = Number(params.get("minPrice") ?? 0);
-  const maxPrice = Number(params.get("maxPrice") ?? Infinity);
-  const brand = params.get("brand") ?? "";
   const vehicleBrand = params.get("vehicleBrand") ?? "";
+
+  // Multi-select: comma-separated brand names
+  const brandsParam = params.get("brands") ?? "";
+  const selectedBrands = useMemo(
+    () => (brandsParam ? brandsParam.split(",").filter(Boolean) : []),
+    [brandsParam]
+  );
+
+  // Multi-select: comma-separated price range indices
+  const priceRangesParam = params.get("priceRanges") ?? "";
+  const selectedPriceIndices = useMemo(
+    () => (priceRangesParam ? priceRangesParam.split(",").map(Number).filter((n) => !isNaN(n)) : []),
+    [priceRangesParam]
+  );
 
   function setParam(key: string, value: string) {
     const p = new URLSearchParams(params.toString());
@@ -52,31 +63,56 @@ export default function ProductsClient() {
     router.push(`/san-pham?${p.toString()}`);
   }
 
-  function setPriceRange(min: number, max: number) {
+  function toggleBrand(b: string) {
     const p = new URLSearchParams(params.toString());
-    const currentMin = Number(params.get("minPrice") ?? 0);
-    const currentMax = Number(params.get("maxPrice") ?? Infinity);
-    if (currentMin === min && currentMax === max) {
-      p.delete("minPrice");
-      p.delete("maxPrice");
+    const current = new Set(selectedBrands.map((s) => s.toLowerCase()));
+    if (current.has(b.toLowerCase())) {
+      current.delete(b.toLowerCase());
     } else {
-      p.set("minPrice", String(min));
-      if (max === Infinity) p.delete("maxPrice");
-      else p.set("maxPrice", String(max));
+      current.add(b.toLowerCase());
     }
+    // Rebuild using original casing from ALL_BRANDS
+    const newBrands = ALL_BRANDS.filter((ab) => current.has(ab.toLowerCase()));
+    if (newBrands.length === 0) p.delete("brands");
+    else p.set("brands", newBrands.join(","));
+    router.push(`/san-pham?${p.toString()}`);
+  }
+
+  function clearBrands() {
+    const p = new URLSearchParams(params.toString());
+    p.delete("brands");
+    router.push(`/san-pham?${p.toString()}`);
+  }
+
+  function togglePriceRange(index: number) {
+    const p = new URLSearchParams(params.toString());
+    const current = new Set(selectedPriceIndices);
+    if (current.has(index)) {
+      current.delete(index);
+    } else {
+      current.add(index);
+    }
+    if (current.size === 0) p.delete("priceRanges");
+    else p.set("priceRanges", Array.from(current).sort().join(","));
+    router.push(`/san-pham?${p.toString()}`);
+  }
+
+  function clearPriceRanges() {
+    const p = new URLSearchParams(params.toString());
+    p.delete("priceRanges");
     router.push(`/san-pham?${p.toString()}`);
   }
 
   const activeFilterCount = useMemo(() => {
     let count = 0;
     if (category) count++;
-    if (brand) count++;
-    if (minPrice > 0 || maxPrice < Infinity) count++;
+    if (selectedBrands.length > 0) count += selectedBrands.length;
+    if (selectedPriceIndices.length > 0) count += selectedPriceIndices.length;
     if (vehicleBrand) count++;
     return count;
-  }, [category, brand, minPrice, maxPrice, vehicleBrand]);
+  }, [category, selectedBrands, selectedPriceIndices, vehicleBrand]);
 
-  const hasActiveTopFilter = brand || minPrice > 0 || maxPrice < Infinity;
+  const hasActiveTopFilter = selectedBrands.length > 0 || selectedPriceIndices.length > 0;
   const hasAnyActiveFilter = activeFilterCount > 0;
 
   const filtered = useMemo(() => {
@@ -86,9 +122,22 @@ export default function ProductsClient() {
         p.name.toLowerCase().includes(query.toLowerCase()) ||
         p.brand.toLowerCase().includes(query.toLowerCase());
       const matchCat = !category || p.categorySlug === category;
-      const effectivePrice = p.salePrice ?? p.price;
-      const matchPrice = effectivePrice >= minPrice && effectivePrice <= maxPrice;
-      const matchBrand = !brand || p.brand.toLowerCase() === brand.toLowerCase();
+
+      // Multi-select price: match ANY of the selected ranges
+      let matchPrice = true;
+      if (selectedPriceIndices.length > 0) {
+        const effectivePrice = p.salePrice ?? p.price;
+        matchPrice = selectedPriceIndices.some((i) => {
+          const range = PRICE_RANGES[i];
+          return range && effectivePrice >= range.min && effectivePrice <= range.max;
+        });
+      }
+
+      // Multi-select brand: match ANY of the selected brands
+      const matchBrand =
+        selectedBrands.length === 0 ||
+        selectedBrands.some((b) => p.brand.toLowerCase() === b.toLowerCase());
+
       const matchVehicleBrand =
         !vehicleBrand ||
         p.vehicleSlug === "universal" ||
@@ -105,7 +154,7 @@ export default function ProductsClient() {
     }
 
     return results;
-  }, [query, category, minPrice, maxPrice, brand, vehicleBrand, sortBy]);
+  }, [query, category, selectedPriceIndices, selectedBrands, vehicleBrand, sortBy]);
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -119,12 +168,22 @@ export default function ProductsClient() {
               Khoảng giá
             </span>
             <div className="flex flex-wrap gap-2.5">
-              {PRICE_RANGES.map((r) => {
-                const isActive = minPrice === r.min && maxPrice === r.max;
+              <button
+                onClick={clearPriceRanges}
+                className={`px-4 py-2 rounded-xl text-xs font-semibold border transition-all duration-200 ${
+                  selectedPriceIndices.length === 0
+                    ? "bg-primary border-primary text-white shadow-md shadow-primary/20"
+                    : "bg-white border-gray-200 text-gray-600 hover:border-primary hover:text-primary hover:bg-primary-light/10"
+                }`}
+              >
+                Tất cả
+              </button>
+              {PRICE_RANGES.map((r, i) => {
+                const isActive = selectedPriceIndices.includes(i);
                 return (
                   <button
                     key={r.label}
-                    onClick={() => setPriceRange(r.min, r.max)}
+                    onClick={() => togglePriceRange(i)}
                     className={`px-4 py-2 rounded-xl text-xs font-semibold border transition-all duration-200 ${
                       isActive
                         ? "bg-primary border-primary text-white shadow-md shadow-primary/20"
@@ -147,12 +206,22 @@ export default function ProductsClient() {
               Bộ sưu tập
             </span>
             <div className="flex flex-wrap gap-2.5 items-center flex-1">
+              <button
+                onClick={clearBrands}
+                className={`px-4 py-2 rounded-xl text-xs font-semibold border transition-all duration-200 ${
+                  selectedBrands.length === 0
+                    ? "bg-primary border-primary text-white shadow-md shadow-primary/20"
+                    : "bg-white border-gray-200 text-gray-600 hover:border-primary hover:text-primary hover:bg-primary-light/10"
+                }`}
+              >
+                Tất cả
+              </button>
               {ALL_BRANDS.map((b) => {
-                const isActive = brand.toLowerCase() === b.toLowerCase();
+                const isActive = selectedBrands.some((sb) => sb.toLowerCase() === b.toLowerCase());
                 return (
                   <button
                     key={b}
-                    onClick={() => setParam("brand", isActive ? "" : b)}
+                    onClick={() => toggleBrand(b)}
                     className={`px-4 py-2 rounded-xl text-xs font-semibold border transition-all duration-200 ${
                       isActive
                         ? "bg-primary border-primary text-white shadow-md shadow-primary/20"
@@ -175,12 +244,11 @@ export default function ProductsClient() {
               <button
                 onClick={() => {
                   const p = new URLSearchParams(params.toString());
-                  p.delete("brand");
-                  p.delete("minPrice");
-                  p.delete("maxPrice");
+                  p.delete("brands");
+                  p.delete("priceRanges");
                   router.push(`/san-pham?${p.toString()}`);
                 }}
-                className="flex items-center gap-1.5 text-xs font-bold text-gray-600 border border-gray-200 rounded-xl px-4 py-2 hover:bg-gray-50 hover:text-primary hover:border-primary transition-all duration-200"
+                className="flex items-center gap-1.5 text-xs font-bold text-emerald-600 border border-emerald-200 rounded-xl px-4 py-2 hover:bg-emerald-600 hover:border-emerald-600 hover:text-white transition-all duration-200"
               >
                 <X size={14} />
                 Chọn lại (Xóa lọc)
@@ -338,9 +406,9 @@ export default function ProductsClient() {
                 <ul className="space-y-1.5">
                   <li>
                     <button
-                      onClick={() => setParam("brand", "")}
+                      onClick={clearBrands}
                       className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                        !brand
+                        selectedBrands.length === 0
                           ? "bg-primary text-white"
                           : "text-gray-600 bg-gray-50 hover:bg-gray-100"
                       }`}
@@ -351,9 +419,9 @@ export default function ProductsClient() {
                   {ALL_BRANDS.map((b) => (
                     <li key={b}>
                       <button
-                        onClick={() => setParam("brand", brand.toLowerCase() === b.toLowerCase() ? "" : b)}
+                        onClick={() => toggleBrand(b)}
                         className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                          brand.toLowerCase() === b.toLowerCase()
+                          selectedBrands.some((sb) => sb.toLowerCase() === b.toLowerCase())
                             ? "bg-primary text-white"
                             : "text-gray-600 bg-gray-50 hover:bg-gray-100"
                         }`}
@@ -369,12 +437,24 @@ export default function ProductsClient() {
               <div>
                 <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Khoảng giá</h4>
                 <ul className="space-y-1.5">
-                  {PRICE_RANGES.map((r) => {
-                    const isActive = minPrice === r.min && maxPrice === r.max;
+                  <li>
+                    <button
+                      onClick={clearPriceRanges}
+                      className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                        selectedPriceIndices.length === 0
+                          ? "bg-primary text-white"
+                          : "text-gray-600 bg-gray-50 hover:bg-gray-100"
+                      }`}
+                    >
+                      Tất cả khoảng giá
+                    </button>
+                  </li>
+                  {PRICE_RANGES.map((r, i) => {
+                    const isActive = selectedPriceIndices.includes(i);
                     return (
                       <li key={r.label}>
                         <button
-                          onClick={() => setPriceRange(r.min, r.max)}
+                          onClick={() => togglePriceRange(i)}
                           className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                             isActive
                               ? "bg-primary text-white"
@@ -429,14 +509,13 @@ export default function ProductsClient() {
                 onClick={() => {
                   const p = new URLSearchParams(params.toString());
                   p.delete("category");
-                  p.delete("brand");
-                  p.delete("minPrice");
-                  p.delete("maxPrice");
+                  p.delete("brands");
+                  p.delete("priceRanges");
                   p.delete("vehicleBrand");
                   router.push(`/san-pham?${p.toString()}`);
                   setIsFilterDrawerOpen(false);
                 }}
-                className="flex-1 py-2.5 text-xs font-bold text-gray-600 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-center"
+                className="flex-1 py-2.5 text-xs font-bold text-emerald-600 border border-emerald-200 rounded-xl hover:bg-emerald-600 hover:border-emerald-600 hover:text-white transition-all duration-150 text-center"
               >
                 Xóa lọc
               </button>
