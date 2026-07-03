@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/layout/FloatingButtons";
+import ChatbotWidget from "@/components/layout/ChatbotWidget";
+import ConsultationPopup from "@/components/home/ConsultationPopup";
 import ToastContainer from "@/components/layout/ToastContainer";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -26,6 +28,8 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <FloatingButtons />
+        <ChatbotWidget />
+        <ConsultationPopup />
         <ToastContainer />
       </body>
     </html>
