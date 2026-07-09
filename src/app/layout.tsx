@@ -8,6 +8,7 @@ import ChatbotWidget from "@/components/layout/ChatbotWidget";
 import ConsultationPopup from "@/components/home/ConsultationPopup";
 import ToastContainer from "@/components/layout/ToastContainer";
 import CartReminderPopup from "@/components/layout/CartReminderPopup";
+import QuickOrderPopup from "@/components/product/QuickOrderPopup";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin", "latin-ext"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <ChatbotWidget />
         <ConsultationPopup />
         <CartReminderPopup />
+        <QuickOrderPopup />
         <ToastContainer />
       </body>
     </html>

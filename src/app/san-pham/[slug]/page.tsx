@@ -55,6 +55,7 @@ export default async function ProductDetailPage({
           <div className="flex items-center justify-center">
             <div className="relative aspect-square w-full max-w-md bg-gray-50 rounded-lg overflow-hidden border border-gray-100">
               <Image
+                id="main-product-image"
                 src={product.images[0]}
                 alt={product.name}
                 fill

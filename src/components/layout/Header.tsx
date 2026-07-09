@@ -87,6 +87,7 @@ export default function Header() {
               </Link>
             </div>
             <Link
+              id="header-cart-icon-mobile"
               href="/gio-hang"
               className={`relative text-white bg-white/10 border border-white/20 rounded-xl p-2 flex items-center gap-1 hover:bg-white/20 transition whitespace-nowrap ${shouldShake ? "animate-shake" : ""}`}
             >
@@ -158,6 +159,7 @@ export default function Header() {
             </button>
 
             <Link
+              id="header-cart-icon-desktop"
               href="/gio-hang"
               className={`relative text-white bg-white/10 border border-white/20 rounded-xl p-2 flex items-center gap-1 hover:bg-white/20 transition whitespace-nowrap ${shouldShake ? "animate-shake" : ""}`}
             >

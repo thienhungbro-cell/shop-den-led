@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ShoppingCart, Tag, Star, Eye } from "lucide-react";
 import { useCartStore } from "@/lib/store";
 import { useToastStore } from "@/lib/toastStore";
-import { formatPrice, calcDiscount } from "@/lib/utils";
+import { formatPrice, calcDiscount, playFlyToCartAnimation } from "@/lib/utils";
 import type { Product } from "@/types";
 
 export default function ProductCard({ product }: { product: Product }) {
@@ -25,6 +25,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <Link href={`/san-pham/${product.slug}`} className="relative block overflow-hidden rounded-t-lg">
         <div className="relative aspect-[4/3] w-full bg-gray-50">
           <Image
+            id={`product-image-${product.id}`}
             src={product.images[0]}
             alt={product.name}
             fill
@@ -105,6 +106,13 @@ export default function ProductCard({ product }: { product: Product }) {
             <button
               onClick={() => {
                 if (!product.inStock) return;
+                
+                // Trigger fly-to-cart animation
+                const imgElement = document.getElementById(`product-image-${product.id}`);
+                if (imgElement) {
+                  playFlyToCartAnimation(imgElement, product.images[0]);
+                }
+
                 addItem(product);
                 addToast(
                   alreadyInCart
@@ -119,12 +127,18 @@ export default function ProductCard({ product }: { product: Product }) {
               <ShoppingCart size={16} />
               <span className="hidden sm:inline">Giỏ</span>
             </button>
-            <Link
-              href={`/san-pham/${product.slug}`}
-              className="flex-1 flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white text-sm font-medium py-2 rounded-md transition-colors"
+            <button
+              onClick={() => {
+                if (!product.inStock) return;
+                window.dispatchEvent(
+                  new CustomEvent("open-quick-order-popup", { detail: { product } })
+                );
+              }}
+              disabled={!product.inStock}
+              className="flex-1 flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark disabled:bg-gray-300 text-white text-sm font-medium py-2 rounded-md transition-colors cursor-pointer"
             >
               <span>Mua ngay</span>
-            </Link>
+            </button>
           </div>
         </div>
       </div>
