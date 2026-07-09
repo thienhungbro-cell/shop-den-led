@@ -19,12 +19,25 @@
   /* Accent orange */
   --color-accent: #f97316;
   --color-accent-dark: #ea6c0e;
+
+  /* Shake animation */
+  --animate-shake: shake 0.5s ease-in-out;
+
+  @keyframes shake {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    15% { transform: scale(1.15) rotate(-15deg); }
+    30% { transform: scale(1.15) rotate(15deg); }
+    45% { transform: scale(1.15) rotate(-15deg); }
+    60% { transform: scale(1.15) rotate(15deg); }
+    75% { transform: scale(1.15) rotate(-5deg); }
+    90% { transform: scale(1.15) rotate(5deg); }
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 @layer utilities {

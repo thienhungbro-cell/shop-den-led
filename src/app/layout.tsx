@@ -7,8 +7,9 @@ import FloatingButtons from "@/components/layout/FloatingButtons";
 import ChatbotWidget from "@/components/layout/ChatbotWidget";
 import ConsultationPopup from "@/components/home/ConsultationPopup";
 import ToastContainer from "@/components/layout/ToastContainer";
+import CartReminderPopup from "@/components/layout/CartReminderPopup";
 
-const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin", "latin-ext"] });
 
 export const metadata: Metadata = {
   title: "XuanLoiStore — Đèn xe cao cấp, phụ kiện ánh sáng",
@@ -30,6 +31,7 @@ export default function RootLayout({
         <FloatingButtons />
         <ChatbotWidget />
         <ConsultationPopup />
+        <CartReminderPopup />
         <ToastContainer />
       </body>
     </html>

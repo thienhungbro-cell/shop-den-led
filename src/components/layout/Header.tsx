@@ -11,11 +11,31 @@ export default function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [query, setQuery] = useState("");
+  const [shouldShake, setShouldShake] = useState(false);
+  const [prevTotalItems, setPrevTotalItems] = useState(0);
+  const [isFirstLoad, setIsFirstLoad] = useState(true);
 
   useEffect(() => {
     setMounted(true);
   }, []);
   const totalItems = useCartStore((s) => s.totalItems());
+
+  useEffect(() => {
+    if (!mounted) return;
+
+    if (isFirstLoad) {
+      setPrevTotalItems(totalItems);
+      setIsFirstLoad(false);
+      return;
+    }
+
+    if (totalItems > prevTotalItems) {
+      setShouldShake(true);
+      const timer = setTimeout(() => setShouldShake(false), 500);
+      return () => clearTimeout(timer);
+    }
+    setPrevTotalItems(totalItems);
+  }, [totalItems, mounted, isFirstLoad, prevTotalItems]);
 
   return (
     <header className="sticky top-0 z-40 bg-[#d70018] shadow-md">
@@ -68,7 +88,7 @@ export default function Header() {
             </div>
             <Link
               href="/gio-hang"
-              className="relative text-white bg-white/10 border border-white/20 rounded-xl p-2 flex items-center gap-1 hover:bg-white/20 transition whitespace-nowrap"
+              className={`relative text-white bg-white/10 border border-white/20 rounded-xl p-2 flex items-center gap-1 hover:bg-white/20 transition whitespace-nowrap ${shouldShake ? "animate-shake" : ""}`}
             >
               <ShoppingCart size={24} />
               {mounted && totalItems > 0 && (
@@ -139,7 +159,7 @@ export default function Header() {
 
             <Link
               href="/gio-hang"
-              className="relative text-white bg-white/10 border border-white/20 rounded-xl p-2 flex items-center gap-1 hover:bg-white/20 transition whitespace-nowrap"
+              className={`relative text-white bg-white/10 border border-white/20 rounded-xl p-2 flex items-center gap-1 hover:bg-white/20 transition whitespace-nowrap ${shouldShake ? "animate-shake" : ""}`}
             >
               <ShoppingCart size={24} />
               {mounted && totalItems > 0 && (
